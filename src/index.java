@@ -23,8 +23,8 @@ public class index {
         System.out.println(file.exists()); //judge whether the file exist, if not, print "false".
        
         int i = path.indexOf(".");
-        String postfix = path.substring(i + 1);
-        if (!postfix.equals("xml")) {
+        String post = path.substring(i + 1);
+        if (!post.equals("xml")) {
            System.out.println("The file format is incorrect. Please select the xml format file.");
         } //Judge whether the path is in XML format， if not, print the sentence.
         
