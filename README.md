@@ -23,7 +23,7 @@ Author: w.w. Wei
 ***Document description：***
 
      index.java: Program main function.
-     Server.java  :Create a server with the ability to store posts.
+     Server.java:Create a server with the ability to store posts.
      ServerThread.java:Thread management on the server side by using thread. Separate it from the client thread.
      Client.java: Send and request data as a client like a server.
      upload.java：Upload the XML file and parse it into json data.
