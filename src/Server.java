@@ -38,8 +38,8 @@ public class Server {
         ssc.register(selector, SelectionKey.OP_ACCEPT);
         // Create processor
         while (true) {
-            // Waiting for the request, each time waiting for blocking for 3s, after more than 3s, the thread continues to run downwards. If you pass in 0 or do not pass the parameter, it will block.
-            if (selector.select(3000) == 0) {
+            // Waiting for the request, each time waiting for blocking for 2s, after more than 2s, the thread continues to run downwards. If you pass in 0 or do not pass the parameter, it will block.
+            if (selector.select(2000) == 0) {
                 continue;
             }
             // Get the pending SelectionKey.
