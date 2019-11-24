@@ -7,17 +7,18 @@ Auther: Wei
 
 
 ***System requirement:*** 
-    import 10 refernence library: apache-commons.jar
-    
-                                  commons-fileupload-1.4.jar
-                                  commons-io-2.5.jar
-                                  i-spring-1.0.0.jar
-                                  javax.servlet.jar
-                                  json-20180813.jar
-                                  org.springframework.context-3.0.4.RELEASE.jar
-                                  org.springframework.web-3.0.6.release.jar
-                                  spring-core-5.2.0.RELEASE.jar
-                                  spring-jcl-5.2.0.RELEASE.jar
+
+    import 10 refernence library: 
+      apache-commons.jar
+      commons-fileupload-1.4.jar
+      commons-io-2.5.jar
+      i-spring-1.0.0.jar
+      javax.servlet.jar
+      json-20180813.jar
+      org.springframework.context-3.0.4.RELEASE.jar
+      org.springframework.web-3.0.6.release.jar
+      spring-core-5.2.0.RELEASE.jar
+      spring-jcl-5.2.0.RELEASE.jar
 
 ***Document description：***
 
@@ -34,7 +35,7 @@ Auther: Wei
        1.2 Users enter the full XML file path. For example:/Users/angelawei/phonebook.xml.
     2. Users enters the full XML path.
        2.1 Parsing XML files into JSON format.
-       2.2 Printing the message header.
+       2.2 Printing the message header.
        2.3 Printing HTM web page data received from the server.
        2.4 In the server root directory, create a new tmp folder. The JSOn data is stored in the "phonebook.json" file.
        
