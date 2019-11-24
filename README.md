@@ -32,7 +32,7 @@ Author: w.w. Wei
 
     1. Start index.java(command line start up is not the same.)
        1.1 The server service has started, port number is 8000. Each time we run the program, the port should be changed to another one manually. for example: 8080 or 80.
-       1.2 Users enter the full XML file path. For example:/Users/angelawei/phonebook.xml.
+       1.2 Users enter the full XML file path. For example:“/Users/angelawei/phonebook.xml”.
     2. Users enters the full XML path.
        2.1 Parsing XML files into JSON format.
        2.2 Printing the message header.
