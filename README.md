@@ -34,7 +34,7 @@ Auther: Wei
        1.2 Users enter the full XML file path. For example:/Users/angelawei/phonebook.xml.
     2. Users enters the full XML path.
        2.1 Parsing XML files into JSON format.
-       2.2 Printing the message header
-       2.3 Printing HTM web page data received from the server.
+       2.2 Printing the message header.
+       2.3 Printing HTM web page data received from the server.
        2.4 In the server root directory, create a new tmp folder. The JSOn data is stored in the "phonebook.json" file.
        
