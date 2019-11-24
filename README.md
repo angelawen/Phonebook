@@ -5,7 +5,8 @@ Develop an HTTP based API for a Phonebook. API should use JSON. All JVM based la
 Only fixed requirement: It should allow me as a user to upload my old phonebook database which is in XML format.
 Auther: Wei
 
-System requirement: 
+
+***System requirement:*** 
     import 10 refernence library: apache-commons.jar
                                   commons-fileupload-1.4.jar
                                   commons-io-2.5.jar
@@ -17,14 +18,14 @@ System requirement:
                                   spring-core-5.2.0.RELEASE.jar
                                   spring-jcl-5.2.0.RELEASE.jar
 
-Document description：
+***Document description：***
      index.java: Program main function.
      Server.java  :Create a server with the ability to store posts.
      ServerThread.java:Thread management on the server side by using thread. Separate it from the client thread.
      Client.java: Send and request data as a client like a server.
      upload.java：Upload the XML file and parse it into json data.
      
-Program running process:
+***Program running process:***
 1. Start index.java(command line start up is not the same.)
    1.1 The server service has started, port number is 8000. Each time we run the program, the port should be changed to another one manually. for example: 8080 or 80.
    1.2 Users enter the full XML file path. For example:/Users/angelawei/phonebook.xml.
