@@ -44,7 +44,9 @@ Author: W.Y. Wei
 The program is unintegrated API.
 The used API is below:
 
-**serverThread()**
+**new ServerThread().start();**
+
+This is not the entre of API, this API of this function was not worked, but it can be excuted in the file "index.java". so this should be updated. 
 
 No parameter, no return value,the port is default 8000.
 
