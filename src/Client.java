@@ -9,7 +9,7 @@ import java.util.Map;
  
  
 /*
- * Java sends HTTP 'get' and 'post' requests.
+ * Java sends HTTP 'post' requests.
  */
 public class Client {
 	public static String sendPost(String url, String param){
