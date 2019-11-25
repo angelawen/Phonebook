@@ -50,22 +50,31 @@ No parameter, no return value,the port is default 8000.
 
 Method description: Start the server, create a new thread.
 
-**upload.upload(path)
+**upload.upload(path)**
 
 Parameter: Path which is string type.
-      Path should be the complete route, for example:"/Users/angelawei/phonebook.xml".
+  
+  Path should be the complete route, for example:"/Users/angelawei/phonebook.xml".
+
 Return value： JSON which is string type.
+
 Method description: Extract files and convert XML to JSON.
+
 Precautions：Path is not determined, do not know whether it is legal or whether it is an XML file. If it is not read, the result is 0.
+
 Code use case: String json = upload.upload(path);
 
-**Client.sentPost(url,json)
+**Client.sentPost(url,json)**
 
 Client.sendPost(url,json)
+
 Parameter: url, json
+
 Return value: An HTML page obtained from the server, which contains data. 
+
 Precautions: The page cannot be opened in Browser.
-Cod use case: String page = Client.sendPost("http://localhost:8000", json);
+
+Code use case: String page = Client.sendPost("http://localhost:8000", json);
 
 
 
