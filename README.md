@@ -36,7 +36,7 @@ Author: W.Y. Wei
     2. Users enters the full XML path.
        2.1 Parsing XML files into JSON format.
        2.2 Printing the message header.
-       2.3 Printing HTM web page data received from the server.
+       2.3 Printing HTML web page data received from the server.
        2.4 In the server root directory, create a new tmp folder. The JSON data is stored in the "./tmp/phonebook.json" file.
        
        
