@@ -25,7 +25,7 @@ public class index {
         int i = path.indexOf(".");
         String postfix = path.substring(i + 1);
         if (!postfix.equals("xml")) {
-           System.out.println("文件格式不正确，请选择xml格式文件!");
+           System.out.println("The file format is incorrect. Please select the xml format file!");
         } //Judge whether the path is in XML format， if not, print the sentence.
         
         upload up = new upload();

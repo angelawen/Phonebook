@@ -5,6 +5,8 @@ Develop an HTTP based API for a Phonebook. API should use JSON. All JVM based la
 Only fixed requirement: It should allow me as a user to upload my old phonebook database which is in XML format.
 Author: W.Y. Wei
 
+Compiler environment：Eclipse.2019-06
+
 
 ***System requirement:*** 
 
@@ -36,7 +38,49 @@ Author: W.Y. Wei
     2. Users enters the full XML path.
        2.1 Parsing XML files into JSON format.
        2.2 Printing the message header.
-       2.3 Printing HTM web page data received from the server.
+       2.3 Printing HTML web page data received from the server.
        2.4 In the server root directory, create a new tmp folder. The JSON data is stored in the "./tmp/phonebook.json" file.
        
-       
+***API***
+
+The program is unintegrated API.
+The used API is below:
+
+**new ServerThread().start();**
+
+This is not the entre of API, this API of this function was not worked, but it can be excuted in the file "index.java". so this should be updated. 
+
+No parameter, no return value,the port is default 8000.
+
+Method description: Start the server, create a new thread.
+
+**upload.upload(path)**
+
+Parameter: Path which is string type.
+  
+  Path should be the complete route, for example:"/Users/angelawei/phonebook.xml".
+
+Return value： JSON which is string type.
+
+Method description: Extract files and convert XML to JSON.
+
+Precautions：Path is not determined, do not know whether it is legal or whether it is an XML file. If it is not read, the result is 0.
+
+Code use case: String json = upload.upload(path);
+
+**Client.sentPost(url,json)**
+
+Client.sendPost(url,json)
+
+Parameter: url, json
+
+Return value: An HTML page obtained from the server, which contains data. 
+
+Precautions: The page cannot be opened in Browser.
+
+Code use case: String page = Client.sendPost("http://localhost:8000", json);
+
+
+
+
+    

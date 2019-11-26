@@ -14,7 +14,7 @@ import org.json.JSONException;
  
  
 /*
- * Java sends HTTP 'get' and 'post' requests.
+ * Java sends HTTP 'post' requests.
  */
 public class Client {
 	public String  clientPost(String path, String url, int port) {
