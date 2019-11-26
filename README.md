@@ -61,17 +61,17 @@ Code case:
 
     'string page= API.Client('/Users/phonebook.xml','http://localhost',8000)'
 
-***Test considerations***
+***Test steps***
 
-The API has been integrated into the gaile2.jar file. The file location is in the root directory, which should be used in the code
+1.The API has been integrated into the gaile2.jar file. The file location is in the root directory, which should be used in the code
 
      'import server.API'
  
 
-Import gaile2.jar in the test case, also you need to import the jar package under the "jar.resourse" folder to use it.
+2.Import gaile2.jar in the test case, also you need to import the jar package under the "jar.resourse" folder to use it.
 
 
-Please use startServer to start the server, and then use the client for XML file upload.
+3.Please use startServer to start the server, and then use the client for XML file upload.
 
 
 
