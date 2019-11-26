@@ -24,62 +24,19 @@ Compiler environment：Eclipse.2019-06
 
 ***Document description：***
 
-     index.java: Program main function.
+     API.java:http based API for phonebook
+     test.java:API test.
      Server.java:Create a server with the ability to store posts.
      ServerThread.java:Thread management on the server side by using thread. Separate it from the client thread.
      Client.java: Send and request data as a client like a server.
      upload.java：Upload the XML file and parse it into json data.
      
-***Program running process:***
 
-    1. Start index.java(command line start up is not the same.)
-       1.1 The server service has started, port number is 8000. Each time we run the program, the port should be changed to another one manually. for example: 8080 or 80.
-       1.2 Users enter the full XML file path. For example:"/Users/angelawei/phonebook.xml".
-    2. Users enters the full XML path.
-       2.1 Parsing XML files into JSON format.
-       2.2 Printing the message header.
-       2.3 Printing HTML web page data received from the server.
-       2.4 In the server root directory, create a new tmp folder. The JSON data is stored in the "./tmp/phonebook.json" file.
        
 ***API***
 
-The program is unintegrated API.
-The used API is below:
 
-**new ServerThread().start();**
-
-This is not the entre of API, this API of this function was not worked, but it can be excuted in the file "index.java". so this should be updated. 
-
-No parameter, no return value,the port is default 8000.
-
-Method description: Start the server, create a new thread.
-
-**upload.upload(path)**
-
-Parameter: Path which is string type.
-  
-  Path should be the complete route, for example:"/Users/angelawei/phonebook.xml".
-
-Return value： JSON which is string type.
-
-Method description: Extract files and convert XML to JSON.
-
-Precautions：Path is not determined, do not know whether it is legal or whether it is an XML file. If it is not read, the result is 0.
-
-Code use case: String json = upload.upload(path);
-
-**Client.sentPost(url,json)**
-
-Client.sendPost(url,json)
-
-Parameter: url, json
-
-Return value: An HTML page obtained from the server, which contains data. 
-
-Precautions: The page cannot be opened in Browser.
-
-Code use case: String page = Client.sendPost("http://localhost:8000", json);
-
+***Test***
 
 
 
