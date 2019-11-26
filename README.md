@@ -34,9 +34,46 @@ Compiler environment：Eclipse.2019-06
 
        
 ***API***
+**startServer**
+
+Parameter: serverPort(int)
+
+Return value: void
+
+Function description: It creates a new process and starts the server.
+
+Instruction: Parameter is the server port number.
+
+Code case: 
+    
+    'API.startServer(8000);'
+
+**Client**
+
+Parameter:filepath(string), url(string),clientPort(int)
+
+Return value: page(string)--HTML page code returned from the server
+
+Precautions：filepath is the full path of the XML file, and url is the full URL without a port number. clientPort should be the same as serverPort.
+
+Code case:
+
+    'string page= API.Client('/Users/phonebook.xml','http://localhost',8000)'
+
+***Test considerations***
+
+The API has been integrated into the gaile2.jar file. The file location is in the root directory, which should be used in the code
+
+     'import server.API'
+ 
+
+Import gaile2.jar in the test case, also you need to import the jar package under the "jar.resourse" folder to use it.
 
 
-***Test***
+Please use startServer to start the server, and then use the client for XML file upload.
+
+
+
 
 
 
