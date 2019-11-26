@@ -1,17 +1,53 @@
+package server;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.List;
 import java.util.Map;
+
+import org.json.JSONException;
  
  
 /*
  * Java sends HTTP 'get' and 'post' requests.
  */
 public class Client {
+	public String  clientPost(String path, String url, int port) {
+        
+        File file = new File(path);
+        System.out.println(file.exists()); //judge whether the file exist, if not, print "false".
+       
+        int i = path.indexOf(".");
+        String postfix = path.substring(i + 1);
+        if (!postfix.equals("xml")) {
+           System.out.println("The file format is incorrect. Please select the xml format file!");
+        } //Judge whether the path is in XML formatï¼? if not, print the sentence.
+        
+        upload up = new upload();
+        String json = "";
+        try {
+        	
+			json = up.uploadFile(path);
+			
+		} catch (JSONException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+        //System.out.println("JSON: ");
+        //System.out.println(json);
+        //System.out.println("JSON FINISH");
+        
+        String page = Client.sendPost(url+":"+port, json);
+        return page;
+	}
+	
+	
 	public static String sendPost(String url, String param){
 		String result = "";
 		try{

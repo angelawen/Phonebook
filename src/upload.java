@@ -1,3 +1,4 @@
+package server;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -21,12 +22,12 @@ public class upload {
 	        return xmlJSONObj.toString();
 	    }
 
-	    public String upload(String path) throws JSONException, IOException {
+	    public String uploadFile(String path) throws JSONException, IOException {
 	        String string = xml2jsonString(path);
 	        return string;
 	       
 	
-	}
-
+	    }
+	    
 	    
 }
