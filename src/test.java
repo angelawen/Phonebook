@@ -11,7 +11,7 @@ public class test {
 		String url=null;
 		String filepath=null;
 		
-		API server = new API();
+		//API server = new API();
 		
 		//input server port
 		BufferedReader br_port = new BufferedReader(new InputStreamReader(System.in)); 
@@ -24,7 +24,7 @@ public class test {
         System.out.println("your server port is :"+ serverPort);
         System.out.println("server start");
         
-         server.startServer(serverPort);
+         API.startServer(serverPort);
         
         //input url
       	BufferedReader br_url = new BufferedReader(new InputStreamReader(System.in)); 
@@ -54,7 +54,7 @@ public class test {
       	} 
         System.out.println("your file path is :"+ filepath);
         
-        String page = server.Client(filepath, url, clientPort);
+        String page = API.Client(filepath, url, clientPort);
         
         System.out.println("Client get page:");
         System.out.println(page);
