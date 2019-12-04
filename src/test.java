@@ -11,7 +11,7 @@ public class test {
 		String url=null;
 		String filepath=null;
 		
-		//API server = new API();
+		
 		
 		//input server port
 		BufferedReader br_port = new BufferedReader(new InputStreamReader(System.in)); 
